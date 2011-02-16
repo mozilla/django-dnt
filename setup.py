@@ -9,7 +9,7 @@ setup(
     author_email='james@mozilla.com',
     url='http://github.com/mozilla/django-dnt',
     license='BSD',
-    packages=['django_dnt'],
+    packages=['dnt'],
     include_package_data=True,
     package_data = { '': ['README.rst'] },
     zip_safe=False,
