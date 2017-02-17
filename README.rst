@@ -7,4 +7,5 @@ users are sending ``DNT: 1``, ``DoNotTrackMiddleware`` will set ``request.DNT =
 True``, else it will set ``request.DNT = False``.
 
 Just add ``dnt.middleware.DoNotTrackMiddleware`` to your ``MIDDLEWARE_CLASSES``
-and you're good to go.
+(Django 1.9 and earlier) or ``MIDDLEWARE`` (Django 1.10 and later) and you're
+good to go.

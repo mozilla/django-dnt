@@ -1,7 +1,15 @@
 from django.utils.cache import patch_vary_headers
 
+try:
+    # Added in Django 1.10
+    from django.utils.deprecation import MiddlewareMixin
+except ImportError:
+    _base_class = object  # pragma: no cover
+else:
+    _base_class = MiddlewareMixin  # pragma: no cover
 
-class DoNotTrackMiddleware(object):
+
+class DoNotTrackMiddleware(_base_class):
 
     def process_request(self, request):
         """
