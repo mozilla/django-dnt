@@ -55,7 +55,7 @@ def long_description():
 
 setup(
     name='django-dnt',
-    version='0.1.0',
+    version='0.2.0',
     description=description + '.',
     long_description=long_description(),
     author='James Socol',
