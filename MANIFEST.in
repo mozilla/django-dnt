@@ -1,2 +1,11 @@
+include HISTORY.rst
 include LICENSE
+include Makefile
 include README.rst
+include manage.py
+include requirements.dev.txt
+include tox.ini
+
+recursive-include testapp *.py
+recursive-include testapp/templates *.html
+recursive-include tests *.py

@@ -1,11 +1,19 @@
 from django.utils.cache import patch_vary_headers
 
+try:
+    # Added in Django 1.10
+    from django.utils.deprecation import MiddlewareMixin
+except ImportError:
+    _base_class = object  # pragma: no cover
+else:
+    _base_class = MiddlewareMixin  # pragma: no cover
 
-class DoNotTrackMiddleware(object):
-    
+
+class DoNotTrackMiddleware(_base_class):
+
     def process_request(self, request):
         """
-        Sets request.DNT to True or False based on the presence of the DNT HTTP header.
+        Sets flag request.DNT based on DNT HTTP header.
         """
         if 'HTTP_DNT' in request.META and request.META['HTTP_DNT'] == '1':
             request.DNT = True

@@ -1,0 +1,9 @@
+# Testing and development requirements
+Django
+check-manifest
+coverage
+flake8
+pyroma
+tox
+twine
+wheel
