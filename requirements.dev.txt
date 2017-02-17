@@ -1,0 +1,5 @@
+# Testing and development requirements
+flake8
+Django
+tox
+coverage
