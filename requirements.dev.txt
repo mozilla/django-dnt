@@ -1,5 +1,9 @@
 # Testing and development requirements
-flake8
 Django
-tox
+check-manifest
 coverage
+flake8
+pyroma
+tox
+twine
+wheel
