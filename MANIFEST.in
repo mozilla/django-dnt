@@ -5,6 +5,7 @@ include README.rst
 include manage.py
 include requirements.dev.txt
 include tox.ini
+include CODE_OF_CONDUCT.md
 
 recursive-include testapp *.py
 recursive-include testapp/templates *.html
