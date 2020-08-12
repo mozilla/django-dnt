@@ -55,7 +55,7 @@ def long_description():
 
 setup(
     name='django-dnt',
-    version='0.2.0',
+    version='1.0',
     description=description + '.',
     long_description=long_description(),
     author='James Socol',
@@ -66,7 +66,7 @@ setup(
     zip_safe=False,
     keywords='django-dnt dnt do not track',
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 6 - Mature',
         'Environment :: Web Environment',
         'Environment :: Web Environment :: Mozilla',
         'Framework :: Django',
