@@ -16,7 +16,8 @@ Django-DNT
 
 .. Omit badges from docs
 
-Do Not Track offers an easy way to pay attention to the ``DNT`` HTTP header. If
+``django-dnt`` offers an easy way to pay attention to the ``DNT``
+(`Do Not Track <https://en.wikipedia.org/wiki/Do_Not_Track>`_) HTTP header. If
 users are sending ``DNT: 1``, ``DoNotTrackMiddleware`` will set ``request.DNT =
 True``, else it will set ``request.DNT = False``.
 
