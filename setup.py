@@ -60,6 +60,8 @@ setup(
     long_description=long_description(),
     author='James Socol',
     author_email='james@mozilla.com',
+    maintainer='John Whitlock',
+    maintainer_email='jwhitlock@mozilla.com',
     url='http://github.com/mozilla/django-dnt',
     license='BSD',
     packages=['dnt'],
